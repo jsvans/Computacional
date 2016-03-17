@@ -1,0 +1,226 @@
+\documentclass[12pt]{article}
+\usepackage[spanish,mexico]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{fancyhdr}
+\title{ El Péndulo}
+\author{Jesús Valenzuela Nieblas}
+\date{22 de enero del 2016}
+
+\begin{document}
+\maketitle
+\pagebreak
+
+
+\section{Introducción}
+El péndulo es un sistema físico que puede oscilar bajo la acción gravitatoria u otra característica física (elasticidad, por ejemplo) y que está configurado por una masa suspendida de un punto o de un eje horizontal fijos mediante un hilo, una varilla, u otro dispositivo que sirve para medir el tiempo.
+\begin{figure}[H]
+\centering		 			
+\includegraphics[width=6cm]{Pendulo.png}
+\end{figure}
+\section{Péndulo Simple}
+El péndulo simple es una idealización del péndulo real en un sistema aislado usando las siguientes suposiciones:
+\begin{itemize}
+\item La varilla o cable que sostiene la masa no se estira y siempre permanece tensa.
+\item La masa es siempre puntual.
+\item El movimiento u oscilación sólo se produce en dos dimensiones.
+\item No hay resistencia del aire.
+\item El campo gravitatorio es uniforme.
+\item El soporte permanece inmóvil.
+\end{itemize}
+
+La ecuación diferencial que representa el movimiento del péndulo simple es:
+\begin{equation}
+\frac{d^2 \theta}{d t^2}+\frac{g}{l}\sin \theta=0
+\end{equation}
+
+Donde $g$ es la aceleración gravitacional, $l$ la longitud del péndulo y $\theta$ es el desplazamiento angular.
+
+\subsection{Fuerza a partir de la escuación del péndulo}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.30\textwidth]{pendulo1.png}
+\caption{Diagrama de fuerzas en el péndulo Simple}
+\end{figure}
+Considerando la figura 1 que muestra las fuerzas que actúan sobre un péndulo simple. Tenga en cuenta que la trayectoria del péndulo barre un arco de un círculo. El ángulo $\theta$ se mide en radianes, y esto es crucial para esta fórmula. La flecha azul es la fuerza de la gravedad que actúa sobre la sacudida, y las flechas son de color violeta esa misma fuerza resolverse en componentes paralela y perpendicular al movimiento instantáneo de la masa. La dirección de la velocidad instantánea de la masa apunta siempre a lo largo del eje rojo, que se considera el eje tangencial porque su dirección es siempre tangente al círculo. Considerando la segunda ley de Newton:
+
+\begin{equation}
+F=ma
+\end{equation}
+
+donde F es la suma de las fuerzas en el objeto, m es la masa, y a es la aceleración. Debido a que somos sólo nos interesan los cambios de velocidad, y debido a la sacudida se ve obligado a permanecer en una trayectoria circular, aplicamos la ecuación de Newton para el eje tangencial solamente.  Así:
+\begin{equation}
+F=-m g\sin\theta = ma
+\end{equation}
+$$a= - g \sin \theta$$
+
+donde g es la aceleración debida a la gravedad cerca de la superficie de la tierra. El signo negativo en el lado derecho implica que $\theta$ y un siempre apuntan en direcciones opuestas. Esto tiene sentido porque cuando un péndulo oscila más hacia la izquierda, es de esperar que se acelere de nuevo hacia la derecha.
+
+Esta aceleración lineal $a$ a lo largo del eje rojo puede estar relacionado con el cambio en el ángulo $\theta$ por las fórmulas de longitud de arco; $s$ es la longitud del arco
+\begin{equation}
+S=l\theta
+\end{equation}
+
+\begin{equation}
+v=\frac{ds}{dt} = l\frac{d\theta}{dt}
+\end{equation}
+
+\begin{equation}
+a=\frac{d^2 s}{dt^2} = l\frac{d^2 \theta}{dt^2}
+\end{equation}
+
+Así:
+
+\begin{equation}
+l\frac{d^2 \theta}{dt^2}= -g\sin \theta
+\end{equation}
+
+$$\frac{d^2 \theta}{dt^2}+ \frac{g}{l} \sin \theta =0 $$
+
+\subsection{Ecuación del péndulo a partir de la energía}
+También se puede obtener a través del principio de conservación de la energía mecánica: cualquier objeto que cae una distancia vertical $h$
+adquiriría energía cinética igual a la que perdió a la caída. En otras palabras, la energía potencial gravitatoria se convierte en energía cinética
+El cambio en la energía potencial está dado por:
+\begin{equation}
+\Delta U=mgh
+\end{equation}
+El cambio en la energía cinética está dado por:
+\begin{equation}
+\Delta K=\frac{1}{2} mv^2
+\end{equation}
+También se puede obtener a través del principio de conservación de la energía mecánica: cualquier cambio en la velocidad para un cambio dado en altura se puede expresar
+v = \ sqrt {2gh} \,
+Utilizando la fórmula de la longitud del arco anterior, esta ecuación puede reescribirse en términos de {d \ theta \ over dt}
+v = {\ ell} {d \ theta \ over dt} = \ sqrt {} 2gh
+{D \ theta \ over dt} = {1 \ sobre \ ell} \ sqrt {} 2gh
+h es la distancia vertical del péndulo cayó. Mira la figura 2, que presenta la trigonometría de un péndulo simple. Si el péndulo comienza su oscilación de algunos $\theta_0$ ángulo inicial, a continuación, $y_0$, la distancia vertical desde el tornillo, está dada por
+\begin{equation}
+y_0 = \ell \cos\theta_0\,
+\end{equation}
+
+Del mismo modo, para y1, tenemos
+\begin{equation}
+y_1 =\ell\cos\theta\
+\end{equation}
+
+entonces h es la diferencia de los dos
+\begin{equation}
+h = \ell\left(\cos\theta-\cos\theta_0\right)
+\end{equation}
+
+en términos de ${d\theta\over dt}da$
+\begin{equation}
+{d\theta\over dt}=\sqrt{{2g\over\ell}\left(\cos\theta-\cos\theta_0\right)}
+\end{equation}
+
+Esta ecuación se conoce como la primera integral de movimiento, que da la velocidad en términos de la ubicación, e incluye una constante de integración en relación con el desplazamiento inicial $(\theta_0)$. Podemos diferenciar, mediante la aplicación de la regla de la cadena, con respecto al tiempo para obtener la aceleración
+\begin{equation}
+{d\over dt} {d\theta\over dt} ={d\over dt}\sqrt {{2g\over \ell} \left(\cos\theta-\cos\theta_0\right)}
+\end{equation}
+
+\begin{equation}
+{d^2\theta \over dt^2} ={1 \over 2} {{-(2g/\ell) \sin\theta}\over{\sqrt {(2g/ \ell) \left(\cos \theta - \cos\theta_0 \right)}}} {d\theta\over dt} \\ ={{1 \over 2}{-(2g / \ell)\sin\theta}\over {\sqrt {(2g/ \ell) \left(\cos \theta-\cos\theta_0 \right)}}}
+{\sqrt {{2g\over \ell} \left(\cos \theta- \cos \theta_0 \right)}}
+\end{equation}
+$=-{g \over \ell} \sin\theta$
+\begin{equation}
+{d^2\theta \over dt^2}+ {g\over \ell} \sin\theta = 0,
+\end{equation}
+
+que es el mismo resultado que obtiene a través de análisis de fuerzas.
+
+\section{Aproximaición para ángulos pequeños}
+La ecuación diferencial dada más arriba no es fácil de resolver, y no hay una solución que puede escribirse en términos de funciones elementales. Sin embargo la adición de una restricción al tamaño de la amplitud de oscilación da una forma cuya solución se puede obtener fácilmente. Si se supone que el ángulo es mucho menor que 1 radián, o
+\ Theta \ ll 1 \ ,,
+a continuación, sustituyendo por el pecado $\theta$ en la ecuación. 1 usando la aproximación de ángulo pequeño,
+\ Sin \ theta \ aprox \ theta \ ,,
+se obtiene la ecuación para un oscilador armónico,
+${d^2 \theta \over dt^2} + {g\over\ell} \theta = 0$.
+El error debido a la aproximación es de $\theta^3$ orden (de la serie de Maclaurin para el $\sin\theta$).
+Dadas las condiciones iniciales $\theta\left(0\right)$ = $\theta_0$ y ${d\theta / dt} (0) = 0$, la solución se vuelve,
+\begin{equation}
+\Theta (t) = \theta_0 \cos \left(\sqrt {g \over \ell \,} \, t\right) \quad \quad \quad \quad \theta_0 \ll 1.
+\end{equation}
+
+El movimiento es un movimiento armónico simple donde $\theta_0$ es la semi-amplitud de la oscilación (es decir, el ángulo máximo entre la varilla del péndulo y la vertical). El periodo del movimiento, el tiempo para una oscilación completa (ida y vuelta) es
+\begin{equation}
+T_0 = 2 \pi \sqrt {\frac {\ell} {g}} \quad \quad \quad \quad \quad \theta_0 \ll 1
+\end{equation}
+
+que se conoce como ley de Christiaan Huygens para el período. Tenga en cuenta que en virtud de la aproximación de ángulo pequeño, el período es independiente de la amplitud $\theta_0$; esta es la característica de isocronismo que Galileo descubrió.
+\section{Periódo para amplitudes arbitrarias}
+Para amplitudes por encima de la aproximación para ángulos pequeños, se puede calcular el periodo exacto por la inversa de la ecuación (15).
+
+\begin{equation}
+\frac{dt}{d\theta}= \sqrt{\frac{l}{2g}} \frac{1}{\sqrt{\cos\theta - \cos \theta_0}}
+\end{equation}
+ 
+Y luego integrando sobre cuatro veces un cuarto de ciclo:\\
+ 
+$$T=4t(\theta_0 \rightarrow 0)$$\\
+
+Se puede escribir como
+
+\begin{equation}
+T= 4\sqrt{\frac{l}{2g}} \int_0^{\theta_0} \frac{1}{\sqrt{\cos\theta - \cos \theta_0}} d\theta
+\end{equation}
+
+Esta integral puede ser escrita en términos de integrales elípticas 
+
+\begin{equation}
+T=4\sqrt{\frac{l}{g}} F \left(\frac{\theta_0}{2},\csc\frac{\theta_0}{2}\right)\csc\frac{\theta_0}{2}
+\end{equation}
+
+Donde $F$ es la integral elíptica incompleta de primera especie definida por
+
+\begin{equation}
+F(\varphi , k)= \int_0^{\varphi} \frac{1}{\sqrt{1-k^2 \sin^2 u}}du
+\end{equation}
+
+O mas consisamente por la sustitución $\sin u= \frac{\sin\frac{\theta}{2}}{\sin\frac{\theta_0}{2}}$ expresando $\theta$ en terminos de $u$.
+
+\begin{equation}
+T=4\sqrt{\frac{l}{g}} K \left(\sin^2\left(\frac{\theta_0}{2}\right)\right)
+\end{equation}
+
+Donde $K$ es la integral elíptica completa de primera especie definida por
+
+\begin{equation}
+K(k)=F\left(\frac{\phi}{2},k\right)= \int_0^{\frac{\pi}{2}} \frac{1}{\sqrt{1-k^2 \sin^2 u}}du
+\end{equation}
+
+\subsubsection{Solución del polinomio de Legendre para la integral elíptica  }
+
+\begin{equation*}
+K(k)=\frac{\pi}{2} \left \{ 1 + \left(\frac{1}{2}\right)^2 k^2 + \left(\frac{1 \cdotp 3}{2 \cdotp 4}\right)^2 k^4 + \cdots +\left[\frac{(2n-1)!!}{(2n)!!}\right]^2 k^{2n}+ \cdots \right \}
+\end{equation*}
+
+Donde $n!!$ denota doble factorial, usa solución exacta del periodo de un péndulo es
+
+\begin{equation*}
+T= 2\pi \sqrt{\frac{l}{g}}\left ( 1 + \left(\frac{1}{2}\right)^2 \sin^2 \left(\frac{\theta_0}{2}\right) + \left(\frac{1 \cdotp 3}{2 \cdotp 4}\right)^2 \sin^4\left(\frac{\theta_0}{2}\right) + \left(\frac{1 \cdotp 3 \cdotp 5 }{2 \cdotp 4 \cdotp 6}\right) \sin^6\left(\frac{\theta_0}{2}\right) + \cdots \right)
+\end{equation*}
+
+\begin{equation*}
+T=2\pi \sqrt{\frac{l}{g}} \sum_{n=0}^\infty \left[\left(\frac{(2n)!}{(2^n \cdotp n!)^2}\right)^2 \cdotp \sin^{2n} \left(\frac{\theta_0}{2}\right)\right] 
+\end{equation*}
+
+\subsubsection{Solución media aritmético-geométrica para la integral elíptica}
+
+\begin{equation*}
+K(k)= \frac{\frac{\pi}{2}}{M(1-k,1+k)}
+\end{equation*}
+
+Esta produce una formula para el periodo:\\
+
+\begin{equation*}
+T=\frac{2\pi}{M\left(1,\cos\left(\frac{\theta_0}{2} \right)\right)}\sqrt{\frac{l}{g}}
+\end{equation*}
+
+\end{document}
